@@ -3,7 +3,7 @@ import { Layout, Row, Col } from 'antd'
 import pict from '../assets/pict-1.png'
 import '../assets/css/style.css'
 import Buttons from '../atom/Buttons';
-import { InstagramOutlined } from '@ant-design/icons';
+import { InstagramOutlined,LinkedinOutlined } from '@ant-design/icons';
 const { Content, Footer } = Layout;
 export default class home extends Component {
     render() {
@@ -62,7 +62,7 @@ export default class home extends Component {
                                             href='https://www.instagram.com/wanderionproject/'
                                             border="1px solid #000053"
                                             className="button-link"
-                                            icon={<InstagramOutlined />}
+                                            icon={<LinkedinOutlined />}
                                         />
                                     </div>
                                 </Col>

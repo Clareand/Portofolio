@@ -17,6 +17,10 @@
   background: #fff;
 }
 
+.section-container{
+  display: flex;
+  padding: 20px;
+}
 .image-container{
   width: 600px;
   margin-top: 40px;
@@ -81,10 +85,24 @@ a.ant-btn {
 }
 
 .center{
-    text-align: center;
+  width: 100%;
+	text-align: center;
+}
+
+.center img{
+	display: flex;
+	margin:auto;
 }
 .justify{
     text-align: justify;
+}
+
+.ant-card-cover img {
+    border-radius: 2px 2px 0 0;
+    max-width: 50%;
+    display: flex;
+    margin: auto;
+    padding: 16px;
 }
 @media screen and (max-width: 720px) {
    .image-responsive img{
@@ -106,6 +124,11 @@ a.ant-btn {
 }
     .big-bold-grey{
     color: #808080;
+    font-size: 5vh;
+    font-weight: bold;
+    }
+     .big-bold-blue{
+    color: #000053;
     font-size: 5vh;
     font-weight: bold;
     }

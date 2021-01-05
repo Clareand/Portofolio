@@ -15,24 +15,34 @@ export default class menu extends Component {
     render() {
         const { current } = this.state;
         return (
-            <div>
-                <BrowserRouter>
-                <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
-                    <Menu.Item key="home" >
-                        <Link to="/">Home</Link>
-                    </Menu.Item>
-                    <Menu.Item key="About Me">
-                        <Link to="/about">About Me</Link>
-                    </Menu.Item>
-                    <SubMenu key="SubMenu" title="More">
-                        <Menu.Item key="setting:1">Skills</Menu.Item>
-                        <Menu.Item key="setting:2">Experience</Menu.Item>
-                        <Menu.Item key="setting:2">Interest</Menu.Item>
-                        <Menu.Item key="setting:2">Awards</Menu.Item>
-                    </SubMenu>
-                </Menu>
-                </BrowserRouter>
-            </div>
-        )
+          <div>
+            <Menu
+              onClick={this.handleClick}
+              selectedKeys={[current]}
+              mode="horizontal"
+            >
+              <Menu.Item key="home">
+                <Link to="/">About Me</Link>
+              </Menu.Item>
+              <SubMenu key="SubMenu" title="More">
+                <Menu.Item key="setting:5">
+                  <Link to="/about">Education</Link>
+                </Menu.Item>
+                <Menu.Item key="setting:1">
+                  <Link to="/skill">Skills</Link>
+                </Menu.Item>
+                <Menu.Item key="setting:2">
+                  <Link to="/experience">Experience</Link>
+                </Menu.Item>
+                <Menu.Item key="setting:3">
+                  <Link to="/interest">Interest</Link>
+                </Menu.Item>
+                <Menu.Item key="setting:4">
+                  <Link to="/awards">Awards</Link>
+                </Menu.Item>
+              </SubMenu>
+            </Menu>
+          </div>
+        );
     }
 }

@@ -1,0 +1,9 @@
+.card{
+    background-color: #fff;
+    box-shadow:1px 0px 15px 8px #f2f2f2;
+}
+
+.centered{
+    display: block;
+    margin: auto;
+}
